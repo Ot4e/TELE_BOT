@@ -22,6 +22,3 @@ def text_to_file(text):
     subprocess.run(["ffmpeg", '-i', mp3_fn, '-acodec', 'libopus', ogg_fn, '-y'])
     os.remove(mp3_fn)
     return ogg_fn
-
-
-#text_to_file('Привет')
