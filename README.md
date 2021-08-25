@@ -17,17 +17,25 @@ python 3 можно скачать тут: https://www.python.org/downloads/
 
 ffmpeg можно скачать тут: https://www.ffmpeg.org/
 
-регистрация Telegram бота: @BotFather 
+регистрация Telegram бота: @BotFather
+
     выполнить команду /newbot
+    
     ответить на вопрос о наименовании бота
+    
     ответить на вопрос о username бота, с окончанием на "bot"
+    
     записать набор символов, следующий после строки: "Use this token to access the HTTP API:" в файл token.txt
+    
 
 вывод списка доступных голосов (параметр voice_id):
 
 import pyttsx3
 
 engine = pyttsx3.init()
+
 voices = engine.getProperty('voices')
+
 for voice in voices:
-   print(voice_id)
+
+    print(voice_id)
