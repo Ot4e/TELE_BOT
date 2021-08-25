@@ -7,6 +7,7 @@ from voice import text_to_file
 
 f = open('token.txt', 'r')
 TOKEN = f.read()
+f.close()
 
 def hello(update, context):
     update.message.reply_text(f'Hello {update.effective_user.first_name}')
